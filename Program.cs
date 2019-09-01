@@ -21,7 +21,7 @@ namespace BisectionGame
             Console.WriteLine();
             Console.WriteLine("MAIN GAME: You choose a number between 1-100 and the computer will guess until it finds your number.");
             Console.WriteLine();
-            Console.WriteLine("Side Game: The computer chooses a number and you try to guess the number it has chosen.");
+            Console.WriteLine("Side Game: You try to choose the number between 1-100 that the computer has selected.");
             Console.WriteLine();
             Console.WriteLine("Enter 1 for the Main Game.");
             Console.WriteLine("Enter 2 for the Side Game.");
@@ -87,7 +87,7 @@ namespace BisectionGame
                 if (s != g)
                 {
                     Console.Clear();
-                    Console.WriteLine($"Your number is {s}");
+                    Console.WriteLine($"Your number is {s}.");
                     Console.WriteLine($"The computer guessed {g}.");
                     Console.WriteLine("Was the computers guess HIGH or LOW?");
                     Console.WriteLine("Enter 1 for HIGH.");
@@ -135,12 +135,12 @@ namespace BisectionGame
             int s; //The users attempt to guess the computers number
             int g; //The programs selected number
             bool loop = true; //Used to keep the "do" loop running
+            Random random = new Random();
+            g = random.Next(1, 101);
 
             Console.Clear();
             Console.WriteLine("***Side Game***");
             Console.WriteLine();
-            Random random = new Random();
-            g = random.Next(1, 101);
             Console.WriteLine("The computer has chosen a number between 1-100.");
             Console.WriteLine();
             Console.WriteLine("Enter the number that you think the computer has chosen.");
