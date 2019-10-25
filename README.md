@@ -1,0 +1,2 @@
+# Bisection
+The Bisection game is a console application asking for the user to input a number between 1-100. The computer will make an estimated guess at what number the user selected. The user will be prompted to answer whether the guess is right or wrong, and it will continue to guess until it is right. It will, on average, guess signifcantly better than a human can, unless the human uses the same algorithm. I also implemented a side game where the user can attempt to guess the computers selected number. 
